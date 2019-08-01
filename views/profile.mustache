@@ -1,0 +1,512 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+      <title>Indian Insitute of Information Technology, Tiruchirappalli</title>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<link href="https://fonts.googleapis.com/css?family=Exo+2:300,400" rel="stylesheet">
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    	<link type="text/javascript" href="/static/jquery-3.4.1.js"/>
+    	<script src="/static/js/jquery.webticker.min.js"></script>
+    	<link rel="stylesheet" type="text/css" media="all" href="/static/css/stellarnav.css">
+    	<link rel="stylesheet" type="text/css" href="/static/styles.css">
+    	<link rel="stylesheet" type="text/css" href="/static/bootstrap.css">
+
+    	<!-- required -->
+    	<style>
+    	/* styles for this sample only */
+    	*{ margin: 0 ; padding: 0; }
+    	body { height: auto; font-size: 16px; font-family: 'Exo 2', sans-serif;
+    	background: #efefef; color: #555; }
+
+    	.header {
+    		text-align: center;margin:0 auto;
+
+    	}
+    	.header a { padding: 20px; display: block; font-size: 48px; text-decoration: none; color: #555; }
+    	.header p { margin: 10px 0 40px 0; font-size: 18px; }
+    	.container { max-width: 1200px; margin: 0 auto; }
+
+
+
+
+    	@media only screen and (max-width : 1000px) {
+    		.stellarnav > ul > li > a { padding: 20px 23px; }
+    	}
+    	body{
+    		background-color:white;
+    	}
+    	@media only screen and (min-width: 600px) {
+
+    		.home-1 {
+    			width: 80% !important;
+    			margin: 0 auto;
+    		}
+    	}
+
+    	@media only screen and (max-width: 900px) {
+    		.home-1 {
+    			width: 100% !important;
+    			margin: 0 auto;
+    		}
+
+    		.container {
+    			width: 100% !important;
+    			margin: 0 auto;
+    			padding: 0;
+    		}
+    	}
+    	.stellarnav ul li a{
+    		z-index:250000;
+    	}
+
+    	/* styles for this sample only */
+    </style>
+
+    </head>
+
+
+
+
+
+
+    <body>
+
+    	<div class="container">
+    		<div class="text-center" style="background-color:antiquewhite;float:left;color:black;padding-top:10px;padding-left:10px; margin:0 auto;">
+
+    			<a href="">About IIIT</a>
+
+    			<a href="">| Vision</a>
+
+    			<a href="">| Mission</a>
+
+    			<a href="">| Student Portal</a>
+
+    		</div>
+
+
+    		<div class="text-center" style="background-color:antiquewhite;float:right">
+
+    			<div style=" background-color: antiquewhite;align-content:center;" class="center">
+    				<ul class="social-network social-circle">
+    					<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+    					<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+    					<li><a href="#" class="icoGoogle" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+    					<li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="header">
+    		<div class="text-center" style="background-color:antiquewhite;">
+    			<div class="container">
+
+
+    				<div class="head-banner hidden-sm hidden-xs hidden-md">
+
+    					<a href=" / " style="padding-bottom:5px;">	<img src="/static/logo-iiit.png" class="img-fluid" alt="IIITT" ></a>
+
+
+    				</div>
+    			</div>
+
+
+    		</div>
+
+    	</div>
+    	<div class="stellarnav" style="  z-index:99;">
+    		<ul style="z-index:2;">
+    			<li><a href="/">Home</a></li>
+    			<li>
+    				<a href="">The Institute</a>
+    				<ul>
+    					<li>
+    						<a href="/aboutIIITT/">About IIITT</a>
+    					</li>
+    					<li>
+    						<a href="#">Institute Administration</a>
+    						<ul>
+    							<li><a href="#">Director's Desk</a></li>
+    							<li><a href="#">Dean</a></li>
+    							<li><a href="#">Academic Dean</a></li>
+    							<li><a href="#">Registrar</a></li>
+    						</ul>
+    					</li>
+    					<li>
+    						<a href="#">Campus </a>
+    					</li>
+    				</ul>
+    			</li>
+
+    			<li>
+    				<a href="">Admissions</a>
+    				<ul>
+    					<li><a href="#">Fee Structure</a></li>
+    					<li><a href="#">JoSAA</a></li>
+    				</ul>
+    			</li>
+
+    						<li>
+    							<a href="">Academics</a>
+    							<ul>
+    								<li><a href="#">Electronics and Communication Engineering</a></li>
+    								<li><a href="#">Computer Science Engineering</a></li>
+    							</ul>
+    						</li>
+
+
+    									<li>
+    										<a href="">Careers</a>
+    										<ul>
+    											<li><a href="#">Placements</a></li>
+    											<li><a href="#">Jobs at IIITT</a></li>
+    										</ul>
+    									</li>
+
+
+    									<li>
+    										<a href="">Activities</a>
+    										<ul>
+    											<li>
+    												<a href="#">Inter IIIT</a>
+    											</li>
+    											<li>
+    												<a href="#">Festivs</a>
+    												<ul>
+    													<li><a href="#">Aahladh</a></li>
+    													<li><a href="#">Prothymos</a></li>
+    													<li><a href="#">Atrang</a></li>
+
+    												</ul>
+    											</li>
+    										</ul>
+    									</li>
+    									<li>
+    										<a href="">People</a>
+    										<ul>
+    											<li><a href=" /faculty/ ">Faculty</a></li>
+    											<li><a href="#">Students</a></li>
+    											<li><a href="#">Staff</a></li>
+    										</ul>
+    									</li>
+
+
+
+
+
+    		</ul>
+    	</div><!-- .stellarnav -->
+    	<!-- required -->
+    	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    	<script type="text/javascript" src="/static/js/stellarnav.min.js"></script>
+    	<script type="text/javascript">
+    	jQuery(document).ready(function ($) {
+    		jQuery('.stellarnav').stellarNav({
+    			theme: 'dark',
+    			breakpoint: 960,
+    			position: 'right',
+    			phoneBtn: '18009997788',
+    			locationBtn: 'https://www.google.com/maps'
+    		});
+    	});
+    	</script>
+    	<!-- required -->
+    	<script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+
+
+
+
+      <marquee direction="left" speed="slow" behavior="loop" >
+           <a href="">Ovde ide neka vest sto se prikazuje traka sa vestima koja ce non stop da se krece :D</a>
+        </marquee>
+
+
+
+
+
+      <!-- CONTENT -->
+
+
+
+
+
+
+
+          
+	<!---home page-->
+
+
+	<div class="container" style="width:70%;background: #edeaea;">
+	<br />
+
+
+
+
+
+	<div style="width: 100%;">
+
+					<div class="text-center" style="margin-top: 0;">
+						<div class="text-center"style=" background-color: white;float:left;">
+							<img id="image" name="image" style="height: 200px; width: 200px;margin:0px auto; border-radius: 5px;object-fit: cover;" src="/media/images/divya_Th9EvCT.jpg">
+						</div>
+						<div class="w3-rest" style="padding-left: 30px; min-width: 300px">
+							<p style="margin: 30px 0 0 0; font-size: xx-large;" class="header">Divya Chaturvedi</p>
+
+							<p class="subheader" style="margin: 0; color: #3275AA;">Faculty</p>
+							<p class="paragraph" style="margin: 0; ">
+								<b style="color: #3275AA; font-weight: 600">E-mail: </b>
+								divyachaturvedi@gmail.com | </p>
+								<p class="paragraph" style="margin: 0; ">
+								<b style="color: #3275AA; font-weight: 600">Ph: </b>
+								+91 44 2747 6302 | </p>
+
+
+												</div>
+					</div>
+				</div>
+
+				<br/>
+<br/>	<br/>
+
+
+
+
+
+					<div id="content" class="frame" style="width: 100%; border-radius: 5px; background: #edeaea; border-color: #edeaea; border-width: 5px; border-style: solid; margin-top: 40px">
+						<div class="w3-row" style="height: 30px;">
+							<div class="w3-col"style="width: 700px; height: 30px;">
+								<p style="font-size: 25px; height: 30px; margin: 0 10px;" class="subheader">Specialization</p>
+							</div></div>
+								<div style="width: 100%; background-color: #214B8C; height: 2px; margin-top: 15px"></div><ol style="list-style: circle; margin: 10px 5px 5px 15px;" ><li><p class="paragraph" style="margin:0">Electromagnetism, EM Waves</p></li></ol></div>
+
+				
+
+					<div id="content" class="frame" style="width: 100%; border-radius: 5px; background: #edeaea; border-color: #edeaea; border-width: 5px; border-style: solid; margin-top: 40px">
+
+						<div class="w3-row" style="height: 30px;">
+							<div class="w3-col"style="width: 700px; height: 30px;">
+								<p style="font-size: 25px; height: 30px; margin: 0 10px;" class="subheader">Education</p>
+							</div>
+						</div>
+
+						<div style="width: 100%; background-color: #214B8C; height: 2px; margin-top: 15px"></div>
+
+
+					<table style="width: 100%; margin: 10px 0; background-color: #edeaea; border-style: none;"><tr style="width: 800px;"><th style="width: 600px; background-color: #edeaea; border-style: none; padding: 5px 10px;"><p class="Pheader" align="left" style=" margin: 5px 0 0 5px; color: #333333;">NIT Rourkela</p></th><th style="width: 150px; background-color: #edeaea; border-style: none; padding: 5px 10px;"><p class="Pheader" align="right" style=" margin: 5px 0 0 5px; color: #333333;"></p></th></tr><tr style="width: 800px; height: 25px;"><th style=" background-color: #edeaea; border-style: none;padding: 5px 10px;"><p align="left" style="font-weight: 400; margin: 0 0 5px 5px; color: #333333;">PhD Computer Science</p></th><th style=" background-color: #edeaea; border-style: none;padding: 5px 10px;"><p align="right" style="font-weight: 400; margin: 0 0 5px 5px; color: #333333;"> - </p></th></tr></table>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					</div>
+
+
+
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<br />
+		<br />
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- FOOTER -->
+
+
+
+
+            <div style=" background-color:#003366;width:100%;list-style:none;" class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <br />
+                            <h4><a href="#" style="padding-left:10px;color:white;list-style:none;">  Quick Links</a></h4>
+                            <hr>
+
+
+                            <!--<div  style="-moz-columns: 3 200px; -webkit-columns: 3 200px; columns: 3 200px; padding:0px 0px 0px 0px; margin: 0px 0px 0px 0px;">-->
+                            <ul style="-moz-columns: 3 200px; -webkit-columns: 3 200px; columns: 3 200px; padding:0px 0px 0px 10px; margin: 0px 0px 0px 0px; color:white;">
+
+
+                                <li>
+                                    <a style="text-align:center;color:white;" href="/files/acad_cal1920.pdf">Academic Calendar 19-20</a>
+                                </li>
+
+
+                                <li><a style="text-align:center;color:white;" href="/iitkgp-announcements">Announcements</a></li>
+
+
+                                <li><a style="text-align:center;color:white;" href="https://erp.iitkgp.ernet.in/ERPWebServices/curricula/specialisationList.jsp?stuType=UG" target="_blank">Academic Curriculum (UG)</a></li>
+
+
+
+
+                                <li><a style="text-align:center;color:white;" href="http://www.library.iitkgp.ernet.in" target="_blank">Library</a></li>
+
+
+                                <li><a style="text-align:center;color:white;" href="/for-students">For Students</a></li>
+
+
+                                <li><a style="text-align:center;color:white;" href="https://erp.iitkgp.ernet.in/FacultyCareer/advtFacultyRecruitment.jsp" target="_blank">Faculty Openings</a></li>
+
+
+                                <li><a style="text-align:center;color:white;" href="/holidays">Holidays</a></li>
+
+
+                                <li><a style="text-align:center;color:white;" href="/internal-complaints-committee">Internal Complaints Committee</a></li>
+
+
+
+                                <li><a style="text-align:center;color:white;" href="/media">Media</a></li>
+
+
+
+                                <li><a style="text-align:center;color:white;" href="/non-teaching-positions">Non-Teaching Positions</a></li>
+
+
+                                <li><a style="text-align:center;color:white;" href="/temporary-jobs">Temporary Jobs</a></li>
+
+
+
+                                <li><a style="text-align:center;color:white;" href="http://www1.iiitt.ac.in/topfiles/tenders.php" target="_blank">Tenders</a></li>
+
+
+
+                                <li><a style="text-align:center;color:white;" href="https://iiittmail.iiitt.ac.in/" target="_blank">Web Mail</a></li>
+
+
+
+                            </ul>
+                            <!--</div>-->
+                        </div>
+                        <div class="clearfix clearfix_on_mobile"></div>
+                        <div class="col-lg-3 col-md-12 col-sm-12 admission">
+                            <h4 style="color:white;padding-top:20px;padding-left10px;text-align:left;">Contact Us</h4> <hr>
+                            <div style="color:white;padding-left:20px;" class="footer_address">
+                                <p>
+                                    Indian Institute of Information Technology Tiruchirappalli<br>
+                                    NIT Trichy, Trichy, India - 721302<br>
+                                    Email: dean-iiits@nitt.edu<br>
+                                    Mobile No: 9489600124<br>
+                                    Office No: 04312500539
+
+                                </p>
+                            </div>
+                            <div class="footer_link2">
+                                <ul style="color:white;padding-left:20px;">
+                                    <li><a style="color:white;" href="/how-to-reach">How to reach <!--(by train/car/nearest airport)--></a></li>
+                                    <li><a style="color:white;" href="/campus-map">Campus Map</a></li>
+                                    <li><a style="color:white;" href="/files/comdir.pdf" target="_blank">Communication Directory</a></li>
+                                    <!--  <li><a href="https://www.youtube.com/watch?v=bmzpKqpigM8" target="blank"><span style="font-weight:bold; color:#0097BC; font-size:14px;">Sundar Pichai at IIT KGP - <I>Live</I></span></a></li> <br>
+                                    <li><a href="/welcome-freshers" target="_blank"><b>Welcome Freshers</b></a></li>-->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clearfix clearfix_on_mobile"></div>
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                            <h4 style="color:white;padding-top:20px;padding=10px;">Social Connect</h4><hr>
+
+                            <div style=" background-color: #fff;align-content:center;" class="center">
+                                <ul class="social-network social-circle">
+                                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#" class="icoGoogle" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                            <br><br>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="container ">
+                        <hr />
+                        <div style="color:white;text-align:center;" class="row">
+                            <div class="col-lg-6 col-md-6 col-md-12">
+                                &copy; 2019 Indian Institute of Information Technology Tiruchirappalli
+                            </div>
+
+                            <br />
+
+                            <div style="text-align:center;padding-left:20px;padding-bottom:5px;">
+                                <!--<a href="/campus-weather">Campus Weather</a> | <a href="/feedback">Feedback</a> | <a href="/legal-disclaimer">Legal Disclaimer</a>-->
+
+
+
+                                <a style="color:white;" href="/campus-weather">
+                                    Campus Weather
+                                </a> |
+
+                                <a style="color:white;" href="/feedback">Feedback</a> |
+                                <a style="color:white;" href="/sitemap">Sitemap</a>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+    </body>
+    </html>
