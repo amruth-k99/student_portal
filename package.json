@@ -1,16 +1,16 @@
 {
   "name": "student-portal",
   "version": "1.0.0",
-  "description": "A student login portal for viewing information about college updates, academic performance, program organisaions and program registrationss",
-  "main": "index.js",
+  "description": "A student login portal for viewing information about college updates, academic performance, program organisaions and program registrations.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node sever.js",
+    "server": "nodemon server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Amruthk99/student-portal.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -19,8 +19,12 @@
   "homepage": "https://github.com/Amruthk99/student-portal#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "concurrently": "^4.1.1",
     "express": "^4.17.1",
-    "mustache-express": "^1.2.8",
+    "mongoose": "^5.6.7",
     "pg": "^7.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }

@@ -1,21 +1,27 @@
 const express = require('express');
-const mustacheExpress = require('mustache-express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
+const students = require('./routes/api/students');
 
 const app = express();
-const mustache = mustacheExpress();
-mustache.cache = null;
-const {Clinet} = require('pg');
-app.engine('mustache',mustache);
-app.set('view engine','mustache');
+//Bodyparser Middleware
+app.use(bodyParser.json())
 
-app.use(express.static('public'));
-app.use(bodyParser.urlencoded({extended:false}));
+//DB Config
+const db = require('./config/keys').uri;
 
-app.get('/profile',(req,res)=>{
-res.render('profile');
-})
+//connect to DB
+mongoose
+    .connect(db)
+    .then(()=>console.log('mongoDB connected...'))
+    .catch(err=>console.log(err));
 
-app.listen(5001,()=>{
-    console.log('listening on port 5001');
-})
+//use routes
+ app.use('/api/students',students);
+
+ const port = process.env.PORT ||5000;
+ app.listen(port,()=> console.log("server started on port ${port}") );   
+
+
+ 
