@@ -16,7 +16,8 @@ router.get('/',(req,res)=>{
 router.post('/',(req,res)=>{
     const newStudent = new Student({
         name : req.body.name,
-        roll: req.body.name
+        roll: req.body.roll,
+        email:req.body.email
     });
     newStudent.save().then(student=>res.json(student)); 
 });

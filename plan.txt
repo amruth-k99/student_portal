@@ -2,4 +2,5 @@
 2. Count how many pages are required.
 3. Make 2 interfaces: one for students and one for teachers.
 4. In students' interface, give permissions only to view the academic sections.
-5.  
+
+5.  sudo code --user-data-dir="~/.vscode-root"

@@ -9,7 +9,12 @@ const StudentSchema = new Schema({
     roll: {
         type:String,
         required:true
+    },
+    email:{
+        type:String,
+        required:true
     }
+    
 
 
 });
