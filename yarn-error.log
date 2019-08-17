@@ -1,0 +1,61 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add passport passport-local pg passport-local-postgres
+
+PATH: 
+  /home/amruth/.local/bin:/home/amruth/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.8.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/home/amruth/workspace/student-portal/node_modules/aproba'
+
+npm manifest: 
+  {
+    "name": "student-portal",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+      "start": "nodemon app.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Amruthk99/student-portal.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Amruthk99/student-portal/issues"
+    },
+    "homepage": "https://github.com/Amruthk99/student-portal#readme",
+    "dependencies": {
+      "bcrypt-nodejs": "0.0.3",
+      "bcryptjs": "^2.4.3",
+      "body-parser": "^1.19.0",
+      "crypt": "0.0.2",
+      "ejs": "^2.6.2",
+      "express": "^4.17.1",
+      "express-session": "^1.16.2",
+      "jsonwebtoken": "^8.5.1",
+      "knex": "^0.19.1",
+      "nodemon": "^1.19.1",
+      "passport": "^0.4.0",
+      "passport-local": "^1.0.0",
+      "pg": "^7.12.1",
+      "request": "^2.88.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,10 +1,29 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
 const path = require('path');
 const router = express.Router();
+const session = require('express-session');
+const passport = require('passport');
 
+
+
+
+
+
+
+
+
+
+
+
+//-----------------------------------
+//              ROUTES
+//-----------------------------------
 app.use(express.static('views'));
-app.set("view engine","ejs")
+app.set("view engine","ejs");
+app.use(bodyParser.urlencoded({extended:true}));
+
 
     app.get('/',(request,response)=>{
     response.render('student_login');
@@ -29,6 +48,15 @@ app.set("view engine","ejs")
    app.get('/profile',(request,response)=>{
     response.render('profile');
    });
+   app.get('/register',(request,response)=>{
+    response.render('register');
+   });
+
+
+
+
+
+
 
 
 //add the router
