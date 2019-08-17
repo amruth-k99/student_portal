@@ -1,0 +1,255 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+        <% include partials/head %>
+    
+    <title>Attendance | Academics | Student Portal | IIITT</title>
+    
+</head>
+
+
+
+<body background="image.jpg">
+
+
+        <header>
+                <% include partials/header %>
+            </header>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="pricing-header px-2 py-2 pt-md-5 pb-md-4 mx-auto text-center" style="color:white; ">
+            <h1 class="display-5">Attendance </h1>
+            <p class="lead">For any corrections or ODs, Please contact respective lecturer.</p>
+        </div>
+
+    <div class="container">
+        <hr >
+    </div>
+
+    <br />
+
+
+
+
+
+    <!--CHART Resources -->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+    <!-- Chart code -->
+    <script>
+        am4core.ready(function () {
+
+            // Themes begin
+            am4core.useTheme(am4themes_animated);
+            // Themes end
+
+            // Create chart instance
+            var chart = am4core.create("chartdiv", am4charts.PieChart);
+
+            // Add data
+            chart.data = [{
+                "country": "Present",
+                "litres": 65
+            },
+            {
+                "country": "Absent",
+                "litres": 35
+            }];
+
+            // Add and configure Series
+            var pieSeries = chart.series.push(new am4charts.PieSeries());
+            pieSeries.dataFields.value = "litres";
+            pieSeries.dataFields.category = "country";
+            pieSeries.slices.template.stroke = am4core.color("#fff");
+            pieSeries.slices.template.strokeWidth = 2;
+            pieSeries.slices.template.strokeOpacity = 1;
+
+            // This creates initial animation
+            pieSeries.hiddenState.properties.opacity = 1;
+            pieSeries.hiddenState.properties.endAngle = -90;
+            pieSeries.hiddenState.properties.startAngle = -90;
+
+        }); // end am4core.ready()
+    </script>
+
+    <script>
+        /* Imports */
+        import * as am4core from "@amcharts/amcharts4/core";
+        import * as am4charts from "@amcharts/amcharts4/charts";
+
+        /* Chart code */
+        // Themes begin
+        am4core.useTheme(am4themes_animated);
+        // Themes end
+
+        // Create chart instance
+        let chart = am4core.create("chartdiv", am4charts.PieChart);
+
+        // Add data
+        chart.data = [{
+            "country": "Lithuania",
+            "litres": 501.9
+        },
+        {
+            "country": "The Netherlands",
+            "litres": 50
+        }];
+
+        // Add and configure Series
+        let pieSeries = chart.series.push(new am4charts.PieSeries());
+        pieSeries.dataFields.value = "litres";
+        pieSeries.dataFields.category = "country";
+        pieSeries.slices.template.stroke = am4core.color("#fff");
+        pieSeries.slices.template.strokeWidth = 2;
+        pieSeries.slices.template.strokeOpacity = 1;
+
+        // This creates initial animation
+        pieSeries.hiddenState.properties.opacity = 1;
+        pieSeries.hiddenState.properties.endAngle = -90;
+        pieSeries.hiddenState.properties.startAngle = -90;
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container" style="background-color:white;padding:10px;">
+
+
+                <div class="container text-center">
+                    <div class="row">
+
+
+                        <!--Copy this code but FIX the graph first(NOT COPYING) or use google charts    -->
+                        <div class="col-lg-6 col-md-6 col-xs-6 thumb">
+                            <h3>
+                                Computer Architecture and Organisation
+                            </h3>
+                            <hr />
+                            Lecturer: A.M. Siva Krishna<br />
+                            Total Classes: 35<br />
+                            Attended: 23 <br />
+                            Absent: 12<br />
+
+                          
+                            <!-- HTML -->
+                            <div class="chartdiv"></div>
+
+                            
+                            <hr>
+                            <div class="help">
+                                <b style="color:red;">You need to attend 4 classes to maintain 75%</b>
+                                <hr>
+
+                            </div>
+                        </div>
+                       
+                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                       
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                
+              
+
+
+               
+
+            </div>
+
+
+
+
+
+
+    <br />
+
+
+
+
+
+
+
+
+
+
+
+
+   <!--foooter-->
+    <div class="container" style="background-color:white; ">
+
+
+
+
+
+
+
+
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+          
+            
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+                <% include partials/footer %>
+         
+            
+        </footer>
+        </footer>
+    </div>
+</body>
+</html>
