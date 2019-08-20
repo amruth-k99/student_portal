@@ -4,3 +4,4 @@
 4. In students' interface, give permissions only to view the academic sections.
 
 5.  sudo code --user-data-dir="~/.vscode-root"
+MongoDB on Windows 10:  https://www.youtube.com/watch?v=FwMwO8pXfq0

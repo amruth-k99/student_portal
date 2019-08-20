@@ -43,15 +43,15 @@
     <link href="signin.css" rel="stylesheet">
 </head>
 <body class="text-center">
-    <form class="form-signin">
+    <form class="form-signin" action="/register" method="POST">
 
         <h1 class="h3 mb-3 font-weight-normal" style="font-size:2.0rem;font-weight:500!important;">Student Register</h1>
         <img class="mb-4" src="/iiitt-logo.png" alt="" width="200" height="200">
        
         <label for="inputString" class="sr-only">Roll Number</label>
-        <input type="text" id="inputString" class="form-control" placeholder="Roll Number" required autofocus>
+        <input type="text" id="inputString" name="username" class="form-control" placeholder="Roll Number" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
         <div class="checkbox mb-3">
             <label>
                 <input type="checkbox" value="remember-me"> Remember me
