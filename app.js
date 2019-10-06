@@ -137,13 +137,13 @@ Student.find({yearOfJoining:"2017"},(function(err, students){
 
 
    Student.create({
-   name:"Siddarath Chillale",
-   rollNo:"CSE17U022",
+   name:"Student Name",
+   rollNo:"CSE17U000",
    yearOfJoining: 2017,
    currentYear:3,
    currentSem:5,
    dept:"CSE",
-   cgpa:"6.8",
+   cgpa:"8.8",
    mobile:9999999999
    
    },function(err,student){
@@ -166,7 +166,7 @@ Student.find({yearOfJoining:"2017"},(function(err, students){
    title:"Holiday Declared on 18-09-2019",
     description:"This is to inform holiday is declared on 18th September",
     date: 19-09-2019,
-    by:"Amruth Kuntamalla"
+    by:"college admin"
 
    },function(err,student){
        if(err)
