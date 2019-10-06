@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= user.name %> | Student Portal | IIITT</title>
+    <% include partials/head %>
+</head>
+
+
+<body background="image.jpg">
+
+
+<header>
+    <% include partials/header %>
+</header>
+
+
+
+<!-- CONTENT  -->
+
+
+
+
+
+
+
+        
+        
+        
+        
+        <hr class="mb-5 ">
+        <div class="container rounded mb-0 bg-white">
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-lg-5 col-xl-4 m-4">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+
+                    <img src="https://scontent-maa2-2.xx.fbcdn.net/v/t1.0-9/15253519_1731557220497916_6630638040996719058_n.jpg?_nc_cat=103&_nc_oc=AQk_6U1oPqMlPZ-mu_C6zwLKX64rU0vr4fVJimRAybDItIXV_TTj6is47R4bgMFTwyQ&_nc_ht=scontent-maa2-2.xx&oh=d71ea22a70aac9f35cd9f1ebb30a7979&oe=5E3D9798" class="ml-3" alt="..." height="300px" width="300px" >            </div>
+          </div>
+          <!--Grid column-->
+
+        
+
+          <!--Grid column-->
+          <div class="col-lg-7 col-xl-7 ml-xl-4 mt-4 mb-4">
+            
+                <h3 class="mt-0 mb-1"><strong><b> <%= user.name %></b></strong></h3><br/>
+                
+                Roll Number :  <strong>  <b> <%= user.rollNo %></b></strong><br/>
+                Current Semester :    <b> <%= user.currentSem %></b><br/>
+                Current Year :       <b> <%= user.currentYear %></b><br/>
+                Branch :    <b> <%= user.dept %></b><br/>
+                Year of Joining :    <b><%= user.yearOfJoining %></b><br/>
+                Batch :    <b>2017-2021</b><br/>
+               Contact :    <b><%= user.mobile %></b><br/>
+               
+               <strong> Overall CGPA:</strong>  
+               <h4 class="mt-0 mb-1"><b><strong><%= user.cgpa %></strong></b></h4>
+
+
+                <br />
+                <p><a href="/Academics">CLick here for Academic Performances </a>
+                </p>
+                 
+                <a href="/attendance">CLick here for Attendance </a>
+              
+            <br />
+
+
+
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+  
+              
+                     
+                
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                        
+                        
+        
+        
+        
+                       
+                        <br />
+                 
+        
+        
+                </div>
+        
+        
+        
+            <br />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <footer>
+                <% include partials/footer %>
+            </footer>
+        </div>
+        </body>
+        </html>
+        
+

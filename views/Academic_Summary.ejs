@@ -25,153 +25,186 @@
 
         <div class="pricing-header px-2 py-2 pt-md-5 pb-md-4 mx-auto text-center" style="color:white; margin:0 auto;padding-bottom:0px !important;">
             <h1 class="display-5">Summary : Academics</h1>
-            <p class="lead">Please choose the appropriate options according to the month.</p>
+            <p class="lead">Contack the respective lecturer for corrections.</p>
         </div>
+        
 
-    <div class="container">
-        <hr >
-    </div>
+        
+        
+        
+        
+        <hr class="mb-5 ">
+        <div class="container rounded mb-0 bg-white">
+        <!--Grid row-->
+        <div class="row wow fadeIn">
 
+          <!--Grid column-->
+          <div class="col-lg-5 col-xl-4 m-4">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
 
-    
+                    <img src="image.jpg" class="ml-3" alt="..." height="200px" width="auto" >            </div>
+          </div>
+          <!--Grid column-->
 
-
-            <div class="container" style="background-color:white;min-width: 700px;">
-                
-                <div class="media" style="margin:0 auto;padding:20px;">
-                    <div class="media-body">
-                        Name:    <h6 class="mt-0 mb-1"><b>Amruth Chary Kuntamalla</b></h6>
-                        Semester:    <h6 class="mt-0 mb-1"><b>5th</b></h6>
-                        Current Year:    <h6 class="mt-0 mb-1"><b>3rd</b></h6>
-                        Branch:    <h6 class="mt-0 mb-1"><b>Electronics and Communication Engineering</b></h6>
-                        Roll Number:    <h6 class="mt-0 mb-1"><b>ECE17U003</b></h6>
-                        Batch:    <h6 class="mt-0 mb-1"><b>2017-2021</b></h6>
-
-                        <br />
-                        <br />
-                        <a href="/attendance">CLick here for Attendance </a>
-                    <br />
-                       
-                    </div>
-                    <img src="image.jpg" class="ml-3" alt="..." width="200" height="200" >
-                </div>
-
-
-                <!--Summary Table-->
-
-                <table class="table">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Subject</th>
-                            <th scope="col">CT-1(20)</th>
-                            <th scope="col">CT-2(20)</th>
-                            <th scope="col">End-Sem</th>
-                            <th scope="col">Attendance</th>
-                            <th scope="col">Last Updated</th>
-                            
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>4 days ago</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>3 days ago</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>4 days ago</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>@twitter</td>
-                            <td>4 days ago</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>4 days ago</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-               
+          <!--Grid column-->
+          <div class="col-lg-7 col-xl-7 ml-xl-4 mt-4 mb-4">
+            
+                Name:    <h6 class="mt-0 mb-1"><strong> <%= user.name %></strong></h6>
+                Semester:    <h6 class="mt-0 mb-1"><b> <%= user.currentSem %></b></h6>
+                Current Year:    <h6 class="mt-0 mb-1"><b> <%= user.currentYear %></b></h6>
+                Branch:    <h6 class="mt-0 mb-1"><b> <%= user.dept %></b></h6>
+                Roll Number:    <h6 class="mt-0 mb-1"><b> <%= user.rollNo %></b></h6>
+                Batch:    <h6 class="mt-0 mb-1"><b>2017-2021</b></h6>
+               <strong> Overall CGPA:</strong>    <h4 class="mt-0 mb-1"><b><%= user.cgpa %></b></h4>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
-                
-
-
-
-               
                 <br />
-            </div>
+                <a href="/attendance">CLick here for Attendance </a>
+            <br />
+
+
+
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+  
+              
+                     
+                        
+                
+                <label class="h3 ml-3 pl-5 text-center" for="exampleFormControlSelect1"><strong> Select Semester</strong> </label>
+                              
+                <ul class="nav nav-pills mb-3  pl-5" id="pills-tab" role="tablist">
+                        
+                    <% var count,p,act = "active";console.log(user.currentSem); %>
+                    <% for(p=1;p<=8;p++){ %>
+                        <li class="nav-item
+                        ">
+                          <a class="nav-link <% if(p===user.currentSem){ %>  <%= act %><%}%>" id="pills-sem1-tab" data-toggle="pill" href="#pills-sem<%= p %>" role="tab"
+                            aria-controls="pills-sem1" aria-selected="true">Sem-<%= p %></a>
+                        </li>
+                        <% } %>
+                       
+                      
+                      </ul>
+                      <div class="tab-content pt-2 pl-1" id="pills-tabContent">
+
+
+
+                            
+                            <% for(p=1;p<=8;p++){ %>
+                                <% count =0;%>
+
+                        <div class="tab-pane fade show  <% if(p===user.currentSem){ %>  <%= act %><%}%>" id="pills-sem<%= p %>" role="tabpanel" aria-labelledby="pills-<%= p %>-tab">
+                          
+                                <table class="table">
+                                        <thead class="thead-dark">
+                    
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Code</th>
+                                                <th scope="col">Subject</th>
+                                                <th scope="col">CT-1(20)</th>
+                                                <th scope="col">CT-2(20)</th>
+                                                <th scope="col">End-Sem</th>
+                                                <th scope="col">Attendance</th>
+                                                <th scope="col">Last Updated</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <% subjects.forEach(function(el, index) { %>
+                                                    <% if((p)===el.sem){ %>
+                                                    <tr> 
+                                                            <% count++; %>
+                                                   <th scope="row"> <%= count %></th>
+                                                    <td> <%= el.sub_code %></td> 
+                                                    <td><%= el.name %></td> 
+                                                    <td><%= el.ct1 %></td> 
+                                                    <td><%= el.ct2 %></td> 
+                                                    <td><%= el.EndSem %></td> 
+                                                    <% var percentage = (el.attendedClasses/el.totalClasses)*100 %>
+                                                    <td><%= el.attendedClasses %> / <%= el.totalClasses %>(<strong><%= percentage.toFixed(0) %>%</strong>)</td> 
+                                                    <td> 4 days ago </td> 
+                                                    </tr> 
+                                            <% } %><% }); %>
+                                                               </tbody>
+                                    </table>
+                    
+                                   
+                        
+                        </div>
+                        <% } %>
+                      
+                        
+                        
+                      
 
 
 
 
 
+                      </div>
+                        
+                        <!--Summary Table-->
+        
+                       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                        
+                        
+        
+        
+        
+                       
+                        <br />
+                 
+        
+        
+                </div>
+        
+        
+        
+            <br />
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <footer>
+                <% include partials/footer %>
+            </footer>
+        </div>
+        </body>
+        </html>
+        
 
-    <br />
-
-
-
-
-
-
-
-
-
-
-
-    <footer>
-        <% include partials/footer %>
-    </footer>
-</div>
-</body>
-</html>

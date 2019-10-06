@@ -4,10 +4,15 @@
 const mongoose = require("mongoose");
 const studentSchema = new mongoose.Schema({
     name:String,
-    rollNo:String,
-    yearOfJoining: Number,
+    currentSem:Number,
+    rollNo:{type:String, unique:true},
     currentYear:Number,
-    dept:String
+    yearOfJoining: String,
+    dept:String,
+    mobile:String,
+    cgpa:String
+
+
 
 });
 module.exports = mongoose.model("Student",studentSchema);

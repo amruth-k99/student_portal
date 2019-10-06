@@ -164,27 +164,39 @@
 
                           
                             <!-- HTML -->
-                            <div class="chartdiv"></div>
+                            <canvas id="pieChart2"></canvas>
+
 
                             
                             <hr>
-                            <div class="help">
-                                <b style="color:red;">You need to attend 4 classes to maintain 75%</b>
-                                <hr>
-
-                            </div>
+                            
                         </div>
                        
+                        <div class="col-lg-6 col-md-6 col-xs-6 thumb">
+                            <h3>
+                                Computer Architecture and Organisation
+                            </h3>
+                            <hr />
+                            Lecturer: A.M. Siva Krishna<br />
+                            Total Classes: 35<br />
+                            Attended: 23 <br />
+                            Absent: 12<br />
+
+                          
+                            <!-- HTML -->
+                          
+                        <canvas id="pieChart"></canvas>
+
+                            
+                            <hr>
+                            
+                        </div>
+
+
+
+
+
                       
-
-
-
-
-
-
-
-
-
 
 
 
@@ -253,3 +265,39 @@
     </div>
 </body>
 </html>
+<script>
+//pie
+var ctxP = document.getElementById("pieChart").getContext('2d');
+var myPieChart = new Chart(ctxP, {
+  type: 'pie',
+  data: {
+    labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+    datasets: [{
+      data: [300, 50, 100, 40, 120],
+      backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+      hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+    }]
+  },
+  options: {
+    responsive: true
+  }
+});
+
+
+//pie
+var ctxP = document.getElementById("pieChart2").getContext('2d');
+var myPieChart = new Chart(ctxP, {
+  type: 'pie',
+  data: {
+    labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+    datasets: [{
+      data: [3100, 510, 100, 41, 320],
+      backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+      hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+    }]
+  },
+  options: {
+    responsive: true
+  }
+});
+</script>

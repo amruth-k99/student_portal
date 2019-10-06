@@ -18,101 +18,84 @@
                 <% include partials/header %>
             </header>
             
+<br/><br/>
 
 
+<div class="container">
 
+    <!--Section: Jumbotron-->
+    <section class="card blue-gradient wow fadeIn" id="intro">
 
+      <!-- Content -->
+      <div class="card-body text-white text-center  ">
 
-
-
-
-
-
-
-
-
-
-
-
-        <div class="pricing-header px-2 py-2 pt-md-5 pb-md-4 mx-auto text-center" style="color:white; ">
-            <h1 class="display-5">Hi, Student!</h1>
+        <h1 class="mb-4">
+          <strong><div class="pricing-header px-2 py-2 pt-md-5  mx-auto text-center" style="color:white; ">
+            <h1 class="display-5">Hi,  <%= user %>!</h1>
             <p class="lead">Welcome to the Online Student Portal IIIT Trichy.</p>
-        </div>
+        </div></strong>
+        </h1>
+       
+        <a href="/profile" class="btn btn-outline-white btn-sm">View Profile
+          <i class="fas fa-graduation-cap ml-2"></i>
+        </a>
 
-    <div class="container">
-        <hr >
-    </div>
+      </div>
+      <!-- Content -->
+    </section>
+    <!--Section: Jumbotron-->
+</div>
 
-    <br />
+    <br />  <br />
+    <h3 class="mb-3 font-weight-bold dark-grey-text text-center">
+            <strong>What's New</strong>
+          </h3>
         <div class="container" >
-            
-   
+  
+                <hr class="mb-5">
 
-
-
-            <div class="container">
-               
-
-                <div class="row no-gutters">
-                        
-                    <div class="col-6 col-md-4 col-sm-6"  style="max-width:250px;margin:0 auto; " >
-                        <h3 style="text-align:center;">Direct Links</h3>
-                        <div class="list-group">
-                            <button type="button" class="list-group-item list-group-item-action active">
-                                Cras justo odio
-                            </button>
-                            <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
-                            <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
-                            <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
-                            <button type="button" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+                <!--Grid row-->
+                <% posts.forEach(function(el, index) {%>
+                <a>
+                <section class="card white-gradient m-5 p-3 wow fadeIn" id="intro">
+                        <div class="col-lg-7 col-xl-7 ml-xl-3 ">
+                                <h3 class="mb-1 font-weight-bold dark-grey-text">
+                                 <%= el.title %></h3>
+                                <p class="m-1">by <%= el.by %></p> 
+                                  <small class="text-muted"><%= el.date %> days ago</small>    
                         </div>
-
-                    </div>
-
-
-
-                    <br />
-                    <div class="col-12 col-sm-6 col-md-9" style="margin:2px auto;padding-left:10px; ">
-                        <h3 style="text-align:center;">What's New!</h3>
-                        <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                    <small>3 days ago</small>
-                                </div>
-                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                <small>Donec id elit non mi porta.</small>
-                                <button style="float:right;" type="button" class="btn btn-outline-info">Logout</button>
-                            </a>
-                            <br />
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                </div>
-                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                <small class="text-muted">Donec id elit non mi porta.</small>
-                                <button style="float:right;" type="button" class="btn btn-outline-info">Logout</button>
-                            </a>
-                            <br />
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">List group item heading</h5>
-                                    <small class="text-muted">3 days ago</small>
-                                </div>
-                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                                <small class="text-muted">Donec id elit non mi porta.</small>
-                                <button style="float:right;" type="button" class="btn btn-outline-info">Logout</button>
-                            </a>
-                        </div>
-
-
-                    
-                    </div>
+                        <p class="grey-text  p-1  ml-xl-4"><%= el.description %>
+                                </p>
                    
-                </div>
-            </div>
+                </section>
+              </a>
+              <% }) %>
+                <!--Grid row-->
 
+
+        
+
+
+        
+                <nav class="text-center container" style="margin-left:auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;margin-right:auto;" aria-label="Page navigation example">
+                    <ul class="pagination pg-blue">
+                      <li class="page-item ">
+                        <a class="page-link" tabindex="-1">Previous</a>
+                      </li>
+                      <li class="page-item active"><a class="page-link">1</a></li>
+                      <li class="page-item ">
+                        <a class="page-link">2 <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="page-item"><a class="page-link">3</a></li>
+                      <li class="page-item ">
+                        <a class="page-link">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+            
 
 
 
@@ -135,12 +118,8 @@
 
 
         
-        
-            <footer class="pt-4 my-md-5 pt-md-5 border-top">
-                    <% include partials/footer %>
-             
-                
-            </footer>
     </div>
+    <% include partials/footer %>
+             
 </body>
 </html>
